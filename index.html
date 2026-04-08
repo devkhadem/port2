@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Portfolio - Facebook Pixel, Conversation API, GA4 Server-Side</title>
+    <meta name="description"
+        content="Expert in Facebook Pixel &amp; Conversation API, GA4 Server-Side Tracking. Professional setup and optimization services.">
+    <!-- Google tag (gtag.js) - GA4 Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX'); // Replace G-XXXXXXXXXX with your GA4 Measurement ID
+    </script>
+    <!-- Facebook Pixel Code - Placeholder -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', 'XXXXXXXXXX'); // Replace XXXXXXXXXX with your Pixel ID
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=XXXXXXXXXX&amp;ev=PageView&amp;noscript=1" /></noscript>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&amp;display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#home">Analytics Pro</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Mastering Digital Analytics &amp; Tracking</h1>
+            <p>Expert services in <strong>Facebook Pixel &amp; Conversation API</strong> and <strong>GA4 Server-Side
+                    Tracking</strong>. Optimize your marketing, ensure compliance, and boost conversions.</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Facebook Pixel &amp; Conversation API</h3>
+                    <p>Full setup of Facebook Pixel for precise event tracking. Integrate Conversation API for automated
+                        messaging on WhatsApp, Messenger, and Instagram. Custom webhooks, event optimization, and
+                        compliance with iOS14+.</p>
+                    <ul>
+                        <li>Pixel installation &amp; verification</li>
+                        <li>Advanced Matching &amp; CAPI</li>
+                        <li>Automated conversations &amp; bots</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started</a>
+                </div>
+                <div class="service-card">
+                    <h3>GA4 Server-Side Tracking</h3>
+                    <p>Implement privacy-first server-side tagging with Google Tag Manager Server (GTM SGTM). Bypass ad
+                        blockers, enhance data accuracy using Measurement Protocol. First-party cookie setup and custom
+                        events.</p>
+                    <ul>
+                        <li>Server-side GTM container</li>
+                        <li>Client + Server events</li>
+                        <li>Consent mode integration</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With 5+ years in digital analytics, I specialize in advanced tracking solutions for e-commerce and
+                lead-gen sites. Certified in GA4 and Meta Business Partner. Helping businesses turn data into revenue.
+            </p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&amp;copy; 2024 Analytics Pro. All rights reserved. | <a href="#privacy">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
